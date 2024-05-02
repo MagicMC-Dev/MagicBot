@@ -1,0 +1,23 @@
+[bot]
+host = "127.0.0.1"
+port = 2310
+driver = "~fastapi+~httpx+~websockets"
+adapters = ["~onebot.v11", "~qq"]
+
+nickname = ["MagicBot"]
+
+proxy_url = "http://127.0.0.1:7890"
+
+alconna_use_command_start = true
+alconna_auto_send_output = true
+
+# telegram_bots = [{ token = "1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ" }]
+
+[plugin]
+plugin_dirs = ["magic/plugins"]
+
+[log]
+log_expire_timeout = 7
+
+[database]
+url = "sqlite://db.sqlite3"
