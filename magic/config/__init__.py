@@ -1,5 +1,5 @@
-from .config import MagicConfig
 from .utils import load_config
+from .config import MagicConfig
 from .path import BOT_DIR as BOT_DIR
 from .path import LOG_DIR as LOG_DIR
 from .path import RES_DIR as RES_DIR
